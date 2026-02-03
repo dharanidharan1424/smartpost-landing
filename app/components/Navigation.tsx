@@ -41,8 +41,6 @@ export default function Navigation() {
                         <a
                             href="https://app.smartpost.co.in"
                             className="btn btn-primary"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
                             Get Started
                         </a>
