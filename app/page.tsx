@@ -1,3 +1,5 @@
+import SmartCTA from '@/components/SmartCTA';
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -22,12 +24,7 @@ export default function Home() {
               Save time, boost engagement, and grow your agency effortlessly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-              <a href="https://app.smartpost.co.in" className="btn btn-primary btn-lg">
-                Get Started Free
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </a>
+              <SmartCTA />
               <a href="#how-it-works" className="btn btn-secondary btn-lg bg-white/10 border-white/30 text-white hover:bg-white/20">
                 Learn More
               </a>
@@ -234,7 +231,7 @@ export default function Home() {
               Join hundreds of agencies already using SmartPost to save time and deliver consistent results for their clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://app.smartpost.co.in" className="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">
+              <a href="https://app.smartpost.co.in/signup" className="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-green-100">
                 Start Free Trial
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
