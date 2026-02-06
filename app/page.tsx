@@ -5,82 +5,39 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-white pt-24 pb-20 overflow-hidden w-full">
-        
         <div className="w-full flex justify-center">
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white border border-sky-100 rounded-full px-4 py-2 mb-8">
-              <span className="w-2 h-2 bg-sky-500 rounded-full"></span>
-              <span className="text-base font-semibold text-sky-600">⚡ Trusted by 500+ Marketing Agencies</span>
+
+            {/* Pre-headline */}
+            <div className="mb-6">
+              <span className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+                Built for Instagram-first agencies
+              </span>
             </div>
 
-            <h1 className="text-gray-900 mb-6 text-6xl md:text-7xl font-bold leading-tight">
-              Stop Hiring for Instagram Posts
+            {/* Big Centered H1 */}
+            <h1 className="text-2xl md:text-2xl font-bold text-center leading-tight max-w-6xl mx-auto text-gray-900 mb-6">
+              Publish Instagram Posts<br />for Multiple Clients in Minutes
             </h1>
-            <p className="text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Automate daily Instagram posting for all your clients from one simple dashboard. Save 10+ hours per week per agency and focus on strategy instead of scheduling.
+
+            {/* Subheading */}
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+              A simple dashboard to schedule and publish Instagram content across all client accounts — without manual posting.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+
+            {/* Primary CTA */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <SmartCTA />
               <a href="#how-it-works" className="btn btn-secondary btn-lg">
                 Watch Demo (3 min)
               </a>
             </div>
 
-            {/* Social Proof */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-base text-gray-600 mb-12">
-              <div className="flex items-center gap-2">
-                <span className="text-xl">⭐⭐⭐⭐⭐</span>
-                <span><strong>4.9/5</strong> on G2</span>
-              </div>
-              <div className="hidden sm:block w-px h-6 bg-gray-200"></div>
-              <div>
-                <strong>No credit card</strong> required to start
-              </div>
-              <div className="hidden sm:block w-px h-6 bg-gray-200"></div>
-              <div>
-                <strong>5-minute</strong> setup
-              </div>
-            </div>
+            {/* Micro text trust indicators */}
+            <p className="text-sm text-gray-500">
+              No credit card • 5-minute setup • Built for agencies
+            </p>
 
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm font-medium text-gray-700">No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm font-medium text-gray-700">5-minute setup</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm font-medium text-gray-700">Full feature access</span>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <div className="bg-gray-50 rounded-lg p-8 transition">
-                <div className="text-5xl font-bold text-gray-900 mb-2">2M+</div>
-                <div className="text-base font-medium text-gray-600">Posts Scheduled</div>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-8 transition">
-                <div className="text-5xl font-bold text-gray-900 mb-2">500+</div>
-                <div className="text-base font-medium text-gray-600">Agencies Trust Us</div>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-8 transition">
-                <div className="text-5xl font-bold text-gray-900 mb-2">99.9%</div>
-                <div className="text-base font-medium text-gray-600">Uptime SLA</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -269,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section bg-white py-20">
+      {/* <section className="section bg-white py-20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="mb-4 text-gray-900 text-5xl">
@@ -349,7 +306,7 @@ export default function Home() {
             </details>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer component is rendered by app/layout.tsx - removed duplicate inline footer */}
     </div>
