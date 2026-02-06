@@ -7,31 +7,31 @@ export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 glass-dark">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
             <div className="container">
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div className="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <span className="text-xl font-bold text-white font-display">SmartPost</span>
+                        <span className="text-lg font-semibold text-gray-900 font-display">SmartPost</span>
                     </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
-                        <Link href="/#features" className="text-white/80 hover:text-white transition-colors duration-300">
+                        <Link href="/#features" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
                             Features
                         </Link>
-                        <Link href="/#how-it-works" className="text-white/80 hover:text-white transition-colors duration-300">
+                        <Link href="/#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
                             How It Works
                         </Link>
-                        <Link href="/privacy-policy" className="text-white/80 hover:text-white transition-colors duration-300">
+                        <Link href="/privacy-policy" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
                             Privacy
                         </Link>
-                        <Link href="/terms" className="text-white/80 hover:text-white transition-colors duration-300">
+                        <Link href="/terms" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
                             Terms
                         </Link>
                     </div>
@@ -48,7 +48,7 @@ export default function Navigation() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-white p-2"
+                        className="md:hidden text-gray-900 p-2"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Toggle menu"
                     >
@@ -66,32 +66,32 @@ export default function Navigation() {
 
                 {/* Mobile Menu */}
                 {isMenuOpen && (
-                    <div className="md:hidden py-4 border-t border-white/10 animate-fadeIn">
+                    <div className="md:hidden py-4 border-t border-gray-200">
                         <div className="flex flex-col gap-4">
                             <Link
                                 href="/#features"
-                                className="text-white/80 hover:text-white transition-colors duration-300 py-2"
+                                className="text-gray-600 hover:text-gray-900 transition-colors py-2 text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Features
                             </Link>
                             <Link
                                 href="/#how-it-works"
-                                className="text-white/80 hover:text-white transition-colors duration-300 py-2"
+                                className="text-gray-600 hover:text-gray-900 transition-colors py-2 text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 How It Works
                             </Link>
                             <Link
                                 href="/privacy-policy"
-                                className="text-white/80 hover:text-white transition-colors duration-300 py-2"
+                                className="text-gray-600 hover:text-gray-900 transition-colors py-2 text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Privacy
                             </Link>
                             <Link
                                 href="/terms"
-                                className="text-white/80 hover:text-white transition-colors duration-300 py-2"
+                                className="text-gray-600 hover:text-gray-900 transition-colors py-2 text-sm font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Terms
