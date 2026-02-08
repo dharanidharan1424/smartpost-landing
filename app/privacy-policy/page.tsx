@@ -148,7 +148,7 @@ export default function PrivacyPolicy() {
                                 <li>Request data export</li>
                             </ul>
                             <p className="text-gray-700 mt-4 leading-relaxed">
-                                Contact us at: privacy@smartpost.co.in
+                                Contact us at: hello@smartpost.co.in
                             </p>
                         </section>
 
